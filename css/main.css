@@ -1,0 +1,311 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+}
+
+footer {
+  height: 70px;
+  width: 100%;
+  background-color: skyblue;
+  box-shadow: 0px 3px 6px #00000029;
+}
+
+.footer-container {
+  height: 60px;
+  background-color: salmon;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-container .logo {
+  padding: 20px;
+  font-size: 2rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  color: #08A6E4;
+  width: 200px;
+}
+
+header {
+  height: 70px;
+  width: 100%;
+  background-color: skyblue;
+  box-shadow: 0px 3px 6px #00000029;
+}
+
+.header-container {
+  height: 60px;
+  background-color: salmon;
+  display: flex;
+  justify-content: space-between;
+}
+.header-container .logo {
+  padding: 20px;
+  font-size: 2rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  color: #08A6E4;
+  width: 200px;
+}
+
+.col-statistics {
+  height: 900px;
+  background-color: tomato;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+@media (min-width: 634px) and (max-width: 923px) {
+  .col-statistics {
+    height: 700px;
+  }
+}
+@media (min-width: 924px) {
+  .col-statistics {
+    height: 400px;
+  }
+}
+
+.statistics-box-1, .statistics-box-2, .statistics-box-3 {
+  width: 250px;
+  height: 250px;
+  background-color: white;
+  margin: 20px;
+}
+
+.box-icon-1 .circle-1 {
+  background-color: #FB3B64;
+}
+
+.box-icon-1 .icon-1 {
+  background-image: url("../assets/Person.svg");
+}
+
+.box-icon-1 {
+  width: 200px;
+  height: 100px;
+}
+
+.box-icon-2 .circle-2 {
+  background-color: #08A6E4;
+}
+
+.box-icon-2 .icon-2 {
+  background-image: url("../assets/Eye.svg");
+  margin-top: 15px;
+}
+
+.box-icon-3 .circle-3 {
+  background-color: #55DFB4;
+}
+
+.box-icon-2 .circle-2, .box-icon-3 .circle-3 {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+}
+
+.box-icon-1 .circle-1 {
+  background-color: #FB3B64;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+}
+
+.box-icon-2, .box-icon-3, .box-icon-1 {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.box-icon-3 .icon-3 {
+  background-image: url("../assets/Catalog.svg");
+  margin-top: 5px;
+}
+
+.box-icon-1 .icon-1, .box-icon-2 .icon-2, .box-icon-3 .icon-3 {
+  height: 50px;
+  width: 60px;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-left: 25px;
+}
+
+.statistics-number {
+  height: 60px;
+  text-align: center;
+  padding-top: 20px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 1.25rem;
+  letter-spacing: 0.1875rem;
+}
+
+.statistics-title {
+  height: 60px;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  color: #A5A5A5;
+}
+
+.col-open-text {
+  height: 300px;
+  background-color: slategray;
+}
+
+.col-open-img {
+  height: 500px;
+  background-color: steelblue;
+}
+
+.container {
+  width: 100%;
+  max-width: 1550px;
+  margin: 0 auto;
+  padding: 0 15px;
+  background-color: skyblue;
+}
+
+[class*=col-] {
+  min-height: 1px;
+  width: 8.3333333333%;
+  padding: 12px;
+}
+
+.col-1 {
+  width: 8.3333333333%;
+}
+
+.col-2 {
+  width: 16.6666666667%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.3333333333%;
+}
+
+.col-5 {
+  width: 41.6666666667%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.3333333333%;
+}
+
+.col-8 {
+  width: 66.6666666667%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.3333333333%;
+}
+
+.col-11 {
+  width: 91.6666666667%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+.container-benefits {
+  height: 1500px;
+  background-color: violet;
+}
+
+.row-benefits {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.benefits-box-1 {
+  height: 350px;
+  width: 300px;
+  background-color: sandybrown;
+  margin-bottom: 20px;
+}
+
+.picture-rectangle {
+  position: relative;
+}
+
+.picture-rectangle img {
+  width: 180px;
+  height: 110px;
+  position: relative;
+  z-index: 2;
+}
+
+.picture-rectangle::before {
+  content: "";
+  height: 100px;
+  width: 100px;
+  background-color: #FB3B64;
+  border-radius: 41px;
+  transform: rotateY(0deg) rotate(45deg);
+  display: block;
+  position: absolute;
+  right: 0;
+}
+
+.benefits-box-2 {
+  height: 350px;
+  width: 300px;
+  background-color: gold;
+  margin-bottom: 20px;
+}
+
+.benefits-box-3 {
+  height: 300px;
+  width: 300px;
+  background-color: white;
+}
+
+.benefits-h3-text {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  color: #000000;
+  margin: 7px 10px;
+}
+
+.benefits-p-text {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #000000;
+  margin: 0 10px;
+}
+
+.benefits-box-4 {
+  height: 250px;
+  width: 300px;
+  background-color: #55DFB4;
+  border-radius: 5px;
+  background-image: url("../assets/Trumpet.png");
+  background-repeat: no-repeat;
+  background-size: 300px 200px;
+  background-position-x: -15px;
+  background-position-y: 60px;
+}
+/*# sourceMappingURL=main.css.map */

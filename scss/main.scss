@@ -1,0 +1,115 @@
+
+@import "variables";
+@import "reset";
+@import "footer";
+@import "header";
+@import "statistics";
+@import "open";
+
+
+
+.container {
+    width: 100%;
+    max-width: 1550px;
+    margin: 0 auto;
+    padding: 0 15px;
+    background-color: skyblue;
+    
+}
+
+[class*="col-"] {
+    min-height: 1px;
+    width: $column-base-width;
+    padding: 12px;
+}
+
+@for $i from 1 through $columns {
+    .col-#{$i} {
+        width: $column-base-width * $i;
+    }
+}
+
+
+
+.container-benefits {
+    height: 1500px;
+    background-color: violet;
+}
+
+.row-benefits {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.benefits-box-1 {
+    height: 350px;
+    width: 300px;
+    background-color: sandybrown;
+    margin-bottom: 20px;
+}
+
+.picture-rectangle {
+    position: relative;
+}
+
+.picture-rectangle img {
+    width: 180px;
+    height: 110px;
+    position: relative;
+    z-index: 2;
+}
+
+.picture-rectangle::before {
+    content: "";
+    height: 100px;
+    width: 100px;
+    background-color: $color-redish;
+    border-radius: 41px;
+    transform: rotateY(0deg) rotate(45deg);
+    display: block;
+    position: absolute;
+    right: 0;
+}
+
+.benefits-box-2 {
+    height: 350px;
+    width: 300px;
+    background-color: gold;
+    margin-bottom: 20px;
+}
+
+.benefits-box-3 {
+    height: 300px;
+    width: 300px;
+    background-color: white;
+}
+
+
+.benefits-h3-text {
+    font-family: $font-Raleway;
+    font-weight: 400;
+    font-size: 36px;
+    color: $color-black;
+    margin: 7px 10px;
+}
+
+.benefits-p-text {
+    font-family: $font-Open-Sans;
+    font-weight: 400;
+    font-size: 16px;
+    color: $color-black;
+    margin: 0 10px;
+}
+
+.benefits-box-4 {
+    height: 250px;
+    width: 300px;
+    background-color: $color-green;
+    border-radius: 5px;
+    background-image: url("../assets/Trumpet.png");
+    background-repeat: no-repeat;
+    background-size: 300px 200px;
+    background-position-x: -15px;
+    background-position-y: 60px;
+}

@@ -1,0 +1,99 @@
+
+.col-statistics {
+    height: 900px;
+    background-color: tomato;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    @media(min-width: 634px) and (max-width: 923px) {
+        height: 700px;
+    }
+    @media(min-width: 924px) {
+        height: 400px;
+    }
+}
+
+.statistics-box-1, .statistics-box-2, .statistics-box-3 {
+    width: 250px;
+    height: 250px;
+    background-color: white;
+    margin: 20px;
+}
+
+.box-icon-1 .circle-1 {
+    background-color: $color-redish; 
+}
+
+.box-icon-1 .icon-1 {
+    background-image: url("../assets/Person.svg");
+}
+
+.box-icon-1 {
+    width: 200px;
+    height: 100px;
+    
+}
+.box-icon-2 .circle-2 {
+    background-color: $primary-color; 
+}
+
+.box-icon-2 .icon-2 {
+    background-image: url("../assets/Eye.svg");
+    margin-top: 15px;
+}
+
+.box-icon-3 .circle-3 {
+    background-color: $color-green;
+}
+
+.box-icon-2 .circle-2, .box-icon-3 .circle-3 {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%; 
+}
+
+.box-icon-1 .circle-1 {
+    background-color: $color-redish; 
+    height: 60px;
+    width: 60px;
+    border-radius: 50%; 
+}
+
+.box-icon-2, .box-icon-3, .box-icon-1 {
+    height: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.box-icon-3 .icon-3 {
+    background-image: url("../assets/Catalog.svg");
+    margin-top: 5px;
+}
+
+.box-icon-1 .icon-1, .box-icon-2 .icon-2, .box-icon-3 .icon-3 {
+    height: 50px;
+    width: 60px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 25px;
+}
+
+.statistics-number {
+    height: 60px;
+    text-align: center;
+    padding-top: 20px;
+    font-family: $font-Raleway;
+    font-weight: 800;
+    font-size: 1.25rem;
+    letter-spacing: 0.1875rem;
+}
+
+.statistics-title {
+    height: 60px;
+    text-align: center;
+    font-family: $font-Raleway;
+    font-weight: 400;
+    font-size: 17px;
+    color: $color-grey;
+}
