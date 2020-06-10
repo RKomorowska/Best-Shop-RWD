@@ -1,0 +1,241 @@
+
+    .row-benefits {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        height: 1400px;
+        background-color: $color-light-grey;
+        @media(max-width: 1095px) {
+            height: 2150px;
+        } 
+    }
+
+
+.col-benefits-1, .col-benefits-2, .col-benefits-3 {
+    display: flex;
+    justify-content: center;
+}
+
+.benefits-box-1 {
+    margin-top: 100px;
+    padding-left: 35px;
+
+ 
+}
+
+.benefits-box-1, .benefits-box-2 {
+    height: 350px;
+    width: 1100px;
+    background-color: $color-white;
+    display: flex;
+    justify-content: space-between;
+    @media(max-width: 1095px) {
+        flex-direction: column-reverse;
+        height: 600px;
+        width: 300px;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.benefits-box-2 {
+  /*  @media(max-width: 975px) {
+        flex-direction: column;
+    } */
+}
+
+.benefits-box-1-text {
+    height: 200px;
+    justify-content: space-between;
+ 
+}
+
+.benefits-box-1-text, .benefits-box-2-text {
+    width: 400px;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: space-around;
+    @media(max-width: 1095px) {
+        width: 300px;
+        align-items: center;
+        padding-right: 15px;
+    }
+}
+
+
+.picture-rectangle {
+    position: relative;
+}
+
+.picture-rectangle img {
+    width: 380px;
+    height: 210px;
+    position: relative;
+    z-index: 2;
+    margin: 100px 110px 30px 0px;
+    @media(max-width: 1095px) {
+        width: 250px;
+        height: 130px;
+        margin-left: 50px;
+    }
+}
+
+.picture-rectangle::before {
+    content: "";
+    height: 180px;
+    width: 180px;
+    background-color: $color-redish;
+    border-radius: 41px;
+    transform: rotateY(0deg) rotate(45deg);
+    display: block;
+    position: absolute;
+    right: 0;
+    margin-right: 100px;
+    margin-top: 60px;
+    @media(max-width: 1095px) {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+.picture-circle {
+    position: relative;
+}
+
+.picture-circle img {
+    width: 420px;
+    height: 320px;
+    position: relative;
+    z-index: 2;
+    margin-top: 30px;
+    margin-left: 50px;
+    @media(max-width: 1095px) {
+        width: 290px;
+        height: 190px;
+    }
+}
+
+.picture-circle::before {
+    content: "";
+    height: 320px;
+    width: 320px;
+    background-color: $primary-color;
+    border-radius: 50%;
+    position: absolute;
+    margin-left: 50px;
+    margin-top: 10px;
+    @media(max-width: 1095px) {
+        width: 220px;
+        height: 220px;
+    }
+}
+
+.benefits-box-2-text {
+    height: 280px;
+    justify-content: space-around;
+    padding-right: 20px;
+    @media(max-width: 1095px) {
+        width: 300px;
+        margin-left: 25px;
+    }
+}
+
+.container-benefits .line-2 {
+    background-color: $primary-color;
+}
+
+.container-benefits .line-1 {
+    background-color: $color-redish;
+}
+
+.container-benefits .line-3 {
+    background-color: $color-green;
+}
+
+.container-benefits .line-1, .line-2, .line-3 {
+    width: 320px;
+    height: 4px;
+    margin: 0;
+    @media(max-width: 1095px) {
+        display: none;
+    }
+}
+
+
+
+.benefits-bottom-boxes {
+    display: flex;
+    @media(max-width: 1095px) {
+        flex-direction: column;
+    } 
+}
+
+.benefits-box-3 {
+    height: 380px;
+    width: 600px;
+    background-color: $color-white;
+    display: inline-block;
+    margin-bottom: 100px;
+    margin-right: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 60px 35px 60px 35px;
+    @media(max-width: 1095px) {
+        width: 300px;
+        margin: 0;
+        padding: 30px 15px;
+    }
+  
+}
+
+.benefits-box-4 {
+    height: 380px;
+    width: 450px;
+    display: inline-block;
+    margin-bottom: 100px;
+    
+    background-color: $color-green;
+    border-radius: 5px;
+    background-image: url("../assets/Trumpet.png");
+    background-repeat: no-repeat;
+    background-size: 300px 200px;
+    background-position-x: 70px;
+    background-position-y: 80px;
+    @media(max-width: 1095px) {
+        width: 300px;
+        margin: 0;
+    }
+    @media(max-width: 1095px) {
+        background-position-x: -15px;
+        background-position-y: 80px;
+        height: 300px;
+    }
+}
+
+
+.benefits-h3-text {
+    font-family: $font-Raleway;
+    font-weight: 400;
+    font-size: 36px;
+    color: $color-black;
+    @media(max-width: 1095px) {
+        font-size: 30px;
+        width: 250px;
+    }
+}
+
+.benefits-p-text {
+    font-family: $font-Open-Sans;
+    font-weight: 400;
+    font-size: 16px;
+    color: $color-black;
+    margin-bottom: 15px;
+    @media(max-width: 1095px) {
+        font-size: 14px;
+        width: 250px;
+    }
+}
+

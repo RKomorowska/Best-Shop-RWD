@@ -1,7 +1,6 @@
 
 .col-statistics {
     height: 900px;
-    background-color: tomato;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -10,6 +9,19 @@
     }
     @media(min-width: 924px) {
         height: 400px;
+    }
+}
+
+.h2-statistics {
+    font-family: $font-Raleway;
+    font-weight: 400;
+    font-size: 36px;
+    color: $color-black;
+    text-align: center;
+    margin-top: 100px;
+    @media(max-width: 634px) {
+        margin-top: 0;
+        padding: 0 30px;
     }
 }
 
@@ -31,6 +43,7 @@
 .box-icon-1 {
     width: 200px;
     height: 100px;
+    margin-left: 20px;
     
 }
 .box-icon-2 .circle-2 {

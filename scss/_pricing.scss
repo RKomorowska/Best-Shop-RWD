@@ -1,0 +1,209 @@
+.h2-pricing {
+    font-family: $font-Raleway;
+    font-weight: 400;
+    font-size: 36px;
+    color: $color-black;
+    text-align: center;
+    margin: 100px 0px 40px 0px;
+}
+
+
+.row-pricing {
+    height: 1100px;
+    background-color: white;
+    @media(max-width: 903px) {
+        margin-left: 15px;
+    } 
+}
+
+.row-pricing .col-pricing {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.pricing-box-1 {
+    border: 1px solid $color-redish; 
+} 
+
+.pricing-box-1, .pricing-box-3, .pricing-box-2 {
+    background-color: $color-white;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 20px;
+
+}
+
+
+.pricing-box-1, .pricing-box-3 {
+    height: 460px;
+    width: 370px; 
+    @media(max-width: 905px) {
+        height: 250px;
+        width: 310px; 
+        margin-top: 50px;
+        padding: 30px;
+    } 
+  
+}
+
+.pricing-box-2 {
+    height: 500px;
+    width: 400px;
+    border: 1px solid $primary-color;
+    box-shadow: 5px 10px 27px #07ACE629;
+    @media(max-width: 905px) {
+        height: 260px;
+        width: 330px; 
+        margin-top: 50px;
+        padding: 30px;
+    } 
+}
+
+.pricing-box-3 {
+    border: 1px solid $color-green;
+} 
+
+.pricing-box-top {
+    height: 160px;
+    width: 150px;
+}
+
+.pricing-box-bottom {
+    height: 200px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    @media(max-width: 905px) {
+        padding: 15px;
+        margin-bottom: 35px;
+        flex-direction: column;
+    } 
+}
+
+.pricing-box-title {
+    text-align: center;
+    font-family: $font-Raleway;
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: $color-black;
+    padding-top: 10px;
+    @media(max-width: 905px) {
+        margin-left: 10px;
+    }
+}
+
+.pricing-box-2 .pricing-box-title {
+    font-weight: 1.3125rem;
+}
+
+.pricing-box-price {
+    text-align: center;
+    font-family: $font-Open-Sans;
+    font-weight: 300;
+    font-size: 2.875rem;
+    color: $color-black;
+    padding: 25px 0px;
+    @media(max-width: 905px) {
+        margin: 0; 
+    } 
+}
+
+.pricing-box-1 .pricing-box-price {
+    color: $color-redish;
+    @media(max-width: 905px) {
+        padding-top: 0; 
+    }
+}
+
+.pricing-box-2 .pricing-box-price {
+    color: $primary-color;
+    @media(max-width: 905px) {
+        padding-top: 0; 
+    }
+}
+
+.pricing-box-3 .pricing-box-price {
+    color: $color-green;
+    @media(max-width: 905px) {
+        padding-top: 0; 
+    }
+}
+
+.pricing-box-subtitle {
+    text-align: center;
+    font-family: $font-Raleway;
+    font-weight: 700;
+    font-size: 0.75rem;
+    color: $color-black;
+    @media(max-width: 905px) {
+        margin-top: -10px; 
+    }
+}
+
+.button-pricing {
+    height: 50px;
+    width: 150px;
+    border-radius: 23px;
+    border: none;
+    font-family: $font-Open-Sans;
+    font-weight: 700;
+    font-size: 0.8125rem;
+    color: $color-white;
+    position: relative;
+    bottom: -35px;
+    @media(max-width: 905px) {
+        margin-top: 70px;
+    }
+    @media(max-width: 905px) {
+        margin-top: -10px; 
+        bottom: 20px;
+    } 
+} 
+
+.container-pricing .button-pricing-1 {
+    background-color: $color-redish;
+}
+
+.container-pricing .button-pricing-2 {
+    background-color: $primary-color;
+    box-shadow: 5px 10px 14px #07ACE629;
+}
+
+.container-pricing .button-pricing-3 {
+    background-color: $color-green;
+}
+
+.pricing-box-text {
+    text-align: center;
+    font-family: $font-Open-Sans;
+    font-weight: 300;
+    font-size: 14px;
+    color: $color-black;
+}
+
+.pricing-box-text-img::before {
+    content: "";
+    width: 11px;
+    height: 11px;
+    display: inline-block;
+    margin-right: 10px;
+    background-image: url("../assets/Ckechmark-1.svg");
+}
+
+.pricing-box-text-img-not::before {
+    background-image: url("../assets/Close.svg");
+
+}
+
+@media(max-width: 905px) {
+    .test-pricing {
+        display: flex;
+        flex-direction: row;
+        margin-top: 80px;
+    }
+}
