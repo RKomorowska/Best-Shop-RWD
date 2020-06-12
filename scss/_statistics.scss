@@ -60,16 +60,12 @@
 }
 
 .box-icon-2 .circle-2, .box-icon-3 .circle-3 {
-    height: 60px;
-    width: 60px;
-    border-radius: 50%; 
+    @include box-icon-circle();
 }
 
 .box-icon-1 .circle-1 {
     background-color: $color-redish; 
-    height: 60px;
-    width: 60px;
-    border-radius: 50%; 
+    @include box-icon-circle();
 }
 
 .box-icon-2, .box-icon-3, .box-icon-1 {

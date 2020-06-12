@@ -1,23 +1,26 @@
 
 .col-contact {
-   
-
-    }
-
-
-.container-contact {
     height: 700px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     @media(max-width: 1025px) {
+        display: flex;
         flex-direction: column;
         justify-self: center;
         align-items: center;
-        
+        margin-top: 50px;
         }
 }
 
 .contact-question-box {
     height: 380px;
     width: 410px;
+    @media(max-width: 1025px) {
+        width: 350px;
+    }
+
+}
 
 .contact-question-box h2 {
     font-family: $font-Raleway;
@@ -39,7 +42,18 @@
     justify-content: flex-start;
     align-items: center;
     padding: 30px 0;
+    @media(max-width: 1025px) {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .contact-mail {
+        @media(max-width: 1025px) {
+            margin-left: 15px;
+        }
+    }
 }
+
 
 .contact-mail-phone-box .contact-mail
 .contact-mail-phone-box .contact-phone {
@@ -75,6 +89,11 @@
     width: 400px;
     margin-top: 100px;
     margin-right: 50px;
+    @media(max-width: 1025px) {
+        margin-top: 0;
+        margin-bottom: 150px;
+        width: 250px;
+    }
 }
 
 input[type="text"] {
@@ -147,6 +166,9 @@ label[type="text"] {
     line-height: 17px;
     font-family: $font-Open-Sans;
     width: 400px;
+    @media(max-width: 1025px) {
+        width: 300px;
+    }
 }
 
 .personal-data-box-button {
@@ -162,4 +184,7 @@ label[type="text"] {
     box-shadow: 5px 10px 14px #07ACE629;
     margin-left: 220px;
     margin-top: 25px; 
+    @media(max-width: 1025px) {
+        margin-left: 120px;
+    }
 }

@@ -1,5 +1,5 @@
 
-    .row-benefits {
+.row-benefits {
         display: flex;
         flex-direction: column;
         align-self: center;
@@ -19,8 +19,6 @@
 .benefits-box-1 {
     margin-top: 100px;
     padding-left: 35px;
-
- 
 }
 
 .benefits-box-1, .benefits-box-2 {
@@ -38,16 +36,11 @@
     }
 }
 
-.benefits-box-2 {
-  /*  @media(max-width: 975px) {
-        flex-direction: column;
-    } */
-}
+
 
 .benefits-box-1-text {
     height: 200px;
     justify-content: space-between;
- 
 }
 
 .benefits-box-1-text, .benefits-box-2-text {
